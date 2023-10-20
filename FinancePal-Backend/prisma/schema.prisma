@@ -12,11 +12,20 @@ datasource db {
 
 model Transaction {
   id          Int    @id @default(autoincrement())
-  description String
   amount      Int
+  description String
+  type        String
+  mounth      String
 }
 
 model Account {
   id   Int    @id @default(autoincrement())
   name String
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  name     String
+  email    String
+  password String
 }
