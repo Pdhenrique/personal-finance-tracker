@@ -7,6 +7,6 @@ export const getTransaction = async (req, res) => {
     const transactions = await prisma.Transaction.findMany()
     res.json(transactions)
   } catch (error) {
-    res.status(500).json({ error: "Erro ao buscar transações"})
+    res.status(500).json({ error: 'Erro ao buscar transações'})
   }
 }
