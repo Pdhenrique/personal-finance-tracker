@@ -1,11 +1,11 @@
-import tokens from "../../tokens.json" 
 
-export type styledFButtonProps = FButtonProps & {
+export type styledFButtonProps = {
   size?: "sm" | "md" | "lg"
-  bgColor?: typeof tokens
+  bgColor?: string
+  textColor?: string
 }
 
-export type FButtonProps = {
+export type FButtonProps = & styledFButtonProps & {
   "data-testid"?: string
   children: string
 }

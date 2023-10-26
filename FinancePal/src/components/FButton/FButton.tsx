@@ -1,9 +1,23 @@
 import { StyledFButton } from "./styled"
-export const FButton = () => {
+import { FButtonProps } from "./types"
+
+
+export const FButton: React.FC<FButtonProps> = ({
+   children,
+   bgColor,
+   textColor,
+  ...props
+}) => {
 
   return (
-    <StyledFButton size="sm" type="button">
-      Submit
+    <StyledFButton 
+      {...props}
+      size="sm" 
+      type="button" 
+      bgColor={bgColor} 
+      textColor={textColor} 
+    >
+      {children}
     </StyledFButton>
   )
 }
