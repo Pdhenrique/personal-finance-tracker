@@ -1,15 +1,12 @@
-import { FButton } from "./components/FButton/FButton"
+import { RegisterForm } from "./components/RegisterForm"
 import "./App.css" //Temporário 
-import tokens from "./tokens.json"
 
 function App() {
 
   return (
-    <>
-      <FButton bgColor={tokens.primary} textColor={tokens.secondary}>
-        Send
-      </FButton>
-    </>
+    
+      <RegisterForm/>
+    
   )
 }
 
