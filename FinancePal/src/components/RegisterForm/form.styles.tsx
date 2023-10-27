@@ -5,20 +5,18 @@ export const StyledContainer = styled.div`
     display: flex;
 
     justify-content: center;
-    align-items: center;
 
     flex-direction: column;
 
     
 `
 
-
 export const StyledForm = styled.div`
     display: flex;
     justify-content: center;
     
     height: 600px;
-    width: 50vw;
+    width: 600px;
     margin-top: -25px;
 
     border-radius: 5px;

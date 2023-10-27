@@ -15,10 +15,10 @@ export const RegisterForm = () => {
     <>
       <TabContext value={value}>
         <StyledContainer>
-            <Box sx={{ borderBottom: 1 }}>
-            <TabList onChange={handleChange} aria-label="lab API tabs example">
-                <Tab label="Register" value="1" />
-                <Tab label="Login"    value="2" />
+            <Box sx={{width: '600', marginLeft: '35px' }}>
+            <TabList  onChange={handleChange} aria-label="lab API tabs example">
+                <Tab sx={{backgroundColor: "#F8F9FA", borderTopLeftRadius: 5}} label="Register" value="1" />
+                <Tab sx={{backgroundColor: "#F8F9FA",  borderTopRightRadius: 5}} label="Login"    value="2" />
             </TabList>
             </Box>
             <TabPanel value="1">
